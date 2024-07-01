@@ -1,0 +1,127 @@
+/* Reset some basic styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background and text colors to complement the logo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7dede; /* Light pink background */
+    color: #543d2c; /* Brown text color */
+    line-height: 1.6;
+}
+
+/* Style the header */
+header {
+    background-color: #543d2c; /* Brown header background */
+    color: #f7dede; /* Light pink header text color */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 300px; /* Adjust the size as needed */
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Scale up the logo */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #f7dede; /* Light pink navigation link color */
+    text-decoration: none;
+    transition: transform 0.3s, font-size 0.3s; /* Transition effect for smooth scaling */
+}
+
+/* Hover effect for navigation links */
+header nav ul li a:hover {
+    transform: scale(1.2); /* Scale up the element */
+    font-size: 1.2rem; /* Increase font size */
+}
+
+/* Style the main content */
+main {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background-color: white; /* White background for main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main section h2 {
+    border-bottom: 2px solid #543d2c; /* Brown bottom border for section headings */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Gallery styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for gallery images */
+.gallery img:hover {
+    transform: scale(1.5); /* Enlarge the image */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+
+/* Certification image styles */
+.certification img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.certification img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #543d2c; /* Brown footer background */
+    color: #f7dede; /* Light pink footer text color */
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        max-width: 90%;
+    }
+}
